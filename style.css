@@ -89,3 +89,65 @@ section{
     font-weight: 600;
 }
 
+/* Responsive styles */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 3rem;
+        top: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+    .secheading {
+        font-size: 2rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+    .text {
+        font-size: 1rem;
+        padding: 0 1rem;
+        margin: 2rem 0;
+    }
+    .bg {
+        background-attachment: scroll;
+        height: 180px;
+    }
+    .description {
+        font-size: 1.2rem;
+        padding: 0.3rem 1rem;
+    }
+    .container {
+        min-height: 160px;
+        height: 35vh;
+    }
+    section {
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+        top: 1rem;
+    }
+    .secheading {
+        font-size: 1.2rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .container {
+        height: 100px;
+        min-height: 100px;
+    }
+}
+
+/* Parallax transition effect for images */
+.foreground, .background {
+    transition: transform 0.5s cubic-bezier(.4,0,.2,1);
+}
+
+/* Optional: smooth scroll for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
